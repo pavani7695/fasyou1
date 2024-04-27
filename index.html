@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fashion Clothing Company</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+        }
+        
+        header {
+            background-color: #ffcc00;
+            padding: 20px;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        
+        .product-image {
+            width: 300px;
+            height: 300px;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Buttons</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="product-info">
+        <img class="product-image" src="product-image.jpg" alt="Fashion Clothing Image">
+        <p>FASHION IS TAKING NEW STORM
+        </p>
+        <button onclick="showMoreDetails()">Show More Details</button>
+        <div id="more-details" style="display: none;">
+            <h2>Additional Details</h2>
+            <p>More specific information about the fashion clothing goes here.</p>
+        </div>
+    </div>
+    
+    <footer>
+        &copy; 2024 Fashion Clothing Company. All rights reserved.
+    </footer>
+    
+    <script>
+        function showMoreDetails() {
+            var moreDetails = document.getElementById("more-details");
+            moreDetails.style.display = "block";
+        }
+    </script>
+</body>
+</html>
